@@ -72,10 +72,10 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
   return (
     <div className="fixed inset-0 bg-[#f7f4ef] z-50 overflow-y-auto">
-      <div className="min-h-screen p-8">
+      <div className="min-h-screen p-4 md:p-6 lg:p-8">
         <Button
           variant="ghost"
-          className="mb-6 hover:bg-black/5"
+          className="mb-4 md:mb-6 hover:bg-black/5 text-sm md:text-base"
           onClick={() => {
             if (view === 'main') {
               onClose();
@@ -93,62 +93,62 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {view === 'main' && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-[#0f0f0f] mb-4 text-center">Student Portal</h2>
-            <p className="text-xl text-[#0f0f0f]/70 mb-12 text-center">Your Academic Companion, Powered By Innovation</p>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f0f0f] mb-3 md:mb-4 text-center">Student Portal</h2>
+            <p className="text-sm md:text-base lg:text-xl text-[#0f0f0f]/70 mb-6 md:mb-10 lg:mb-12 text-center">Your Academic Companion, Powered By Innovation</p>
 
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
               <button
                 onClick={() => setView('notes')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
               >
-                <BookOpen className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-[#0f0f0f] mb-2">Notes & Tutorial</h3>
-                <p className="text-[#0f0f0f]/70">Access study materials</p>
+                <BookOpen className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-blue-600 mb-2 md:mb-3 lg:mb-4 group-hover:scale-110 transition-transform" />
+                <h3 className="text-sm md:text-base lg:text-xl font-bold text-[#0f0f0f] mb-1 md:mb-2">Notes & Tutorial</h3>
+                <p className="text-xs md:text-sm text-[#0f0f0f]/70">Access study materials</p>
               </button>
 
               <button
                 onClick={() => setView('pyq')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
               >
-                <FileText className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-[#0f0f0f] mb-2">PYQ & Mock Test</h3>
-                <p className="text-[#0f0f0f]/70">Practice previous papers</p>
+                <FileText className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-blue-600 mb-2 md:mb-3 lg:mb-4 group-hover:scale-110 transition-transform" />
+                <h3 className="text-sm md:text-base lg:text-xl font-bold text-[#0f0f0f] mb-1 md:mb-2">PYQ & Mock Test</h3>
+                <p className="text-xs md:text-sm text-[#0f0f0f]/70">Practice previous papers</p>
               </button>
 
               <button
                 onClick={() => setView('coming-soon')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
               >
-                <Calendar className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-[#0f0f0f] mb-2">Event & Notices</h3>
-                <p className="text-[#0f0f0f]/70">Stay updated</p>
+                <Calendar className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-blue-600 mb-2 md:mb-3 lg:mb-4 group-hover:scale-110 transition-transform" />
+                <h3 className="text-sm md:text-base lg:text-xl font-bold text-[#0f0f0f] mb-1 md:mb-2">Event & Notices</h3>
+                <p className="text-xs md:text-sm text-[#0f0f0f]/70">Stay updated</p>
               </button>
 
               <button
                 onClick={() => setView('chatroom')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
               >
-                <MessageCircle className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-[#0f0f0f] mb-2">Doubt Solving</h3>
-                <p className="text-[#0f0f0f]/70">Real-time chat support</p>
+                <MessageCircle className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-blue-600 mb-2 md:mb-3 lg:mb-4 group-hover:scale-110 transition-transform" />
+                <h3 className="text-sm md:text-base lg:text-xl font-bold text-[#0f0f0f] mb-1 md:mb-2">Doubt Solving</h3>
+                <p className="text-xs md:text-sm text-[#0f0f0f]/70">Real-time chat support</p>
               </button>
 
               <button
                 onClick={() => setView('coming-soon')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
               >
-                <Library className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-[#0f0f0f] mb-2">E-Library</h3>
-                <p className="text-[#0f0f0f]/70">Digital resources</p>
+                <Library className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-blue-600 mb-2 md:mb-3 lg:mb-4 group-hover:scale-110 transition-transform" />
+                <h3 className="text-sm md:text-base lg:text-xl font-bold text-[#0f0f0f] mb-1 md:mb-2">E-Library</h3>
+                <p className="text-xs md:text-sm text-[#0f0f0f]/70">Digital resources</p>
               </button>
 
               <button
                 onClick={() => setView('newsroom')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-left group"
               >
-                <Newspaper className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-[#0f0f0f] mb-2">Campus Newsroom</h3>
-                <p className="text-[#0f0f0f]/70">Class & club updates</p>
+                <Newspaper className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-blue-600 mb-2 md:mb-3 lg:mb-4 group-hover:scale-110 transition-transform" />
+                <h3 className="text-sm md:text-base lg:text-xl font-bold text-[#0f0f0f] mb-1 md:mb-2">Campus Newsroom</h3>
+                <p className="text-xs md:text-sm text-[#0f0f0f]/70">Class & club updates</p>
               </button>
             </div>
           </div>
@@ -156,17 +156,17 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {(view === 'notes' || view === 'pyq') && (
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#0f0f0f] mb-8 text-center">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#0f0f0f] mb-4 md:mb-6 lg:mb-8 text-center">
               {view === 'notes' ? 'Notes & Tutorial' : 'PYQ & Mock Test'}
             </h2>
-            <div className="grid grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
               {subjects.map((subject) => (
                 <button
                   key={subject}
                   onClick={() => setView('coming-soon')}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
+                  className="bg-white/80 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-4 lg:p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center"
                 >
-                  <p className="font-semibold text-[#0f0f0f]">{subject}</p>
+                  <p className="font-semibold text-[#0f0f0f] text-xs md:text-sm lg:text-base">{subject}</p>
                 </button>
               ))}
             </div>
@@ -175,25 +175,25 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {view === 'newsroom' && !selectedDepartment && !selectedClub && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#0f0f0f] mb-8 text-center">Campus Newsroom</h2>
-            <div className="grid grid-cols-3 gap-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#0f0f0f] mb-4 md:mb-6 lg:mb-8 text-center">Campus Newsroom</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <button
                 onClick={() => setView('class-newsroom')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <h3 className="text-xl font-bold text-[#0f0f0f]">Class Newsroom</h3>
+                <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">Class Newsroom</h3>
               </button>
               <button
                 onClick={() => setView('coming-soon')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <h3 className="text-xl font-bold text-[#0f0f0f]">College Updates</h3>
+                <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">College Updates</h3>
               </button>
               <button
                 onClick={() => setView('clubs')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <h3 className="text-xl font-bold text-[#0f0f0f]">Clubs</h3>
+                <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">Clubs</h3>
               </button>
             </div>
           </div>
@@ -201,8 +201,8 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {view === 'class-newsroom' && !selectedDepartment && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#0f0f0f] mb-8 text-center">Select Department</h2>
-            <div className="grid grid-cols-3 gap-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#0f0f0f] mb-4 md:mb-6 lg:mb-8 text-center">Select Department</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
               {departments.map((dept) => (
                 <button
                   key={dept}
@@ -210,9 +210,9 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
                     setSelectedDepartment(dept);
                     setView('select-role');
                   }}
-                  className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                  className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
                 >
-                  <h3 className="text-xl font-bold text-[#0f0f0f]">{dept}</h3>
+                  <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">{dept}</h3>
                 </button>
               ))}
             </div>
@@ -221,8 +221,8 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {view === 'clubs' && !selectedClub && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#0f0f0f] mb-8 text-center">Select Club</h2>
-            <div className="grid grid-cols-2 gap-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#0f0f0f] mb-4 md:mb-6 lg:mb-8 text-center">Select Club</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               {clubs.map((club) => (
                 <button
                   key={club}
@@ -230,9 +230,9 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
                     setSelectedClub(club);
                     setView('club-role');
                   }}
-                  className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                  className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
                 >
-                  <h3 className="text-xl font-bold text-[#0f0f0f]">{club}</h3>
+                  <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">{club}</h3>
                 </button>
               ))}
             </div>
@@ -241,19 +241,19 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {view === 'select-role' && selectedDepartment && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#0f0f0f] mb-8 text-center">Select Your Role</h2>
-            <div className="grid grid-cols-2 gap-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#0f0f0f] mb-4 md:mb-6 lg:mb-8 text-center">Select Your Role</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <button
                 onClick={() => setView('class-view')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <h3 className="text-xl font-bold text-[#0f0f0f]">Student</h3>
+                <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">Student</h3>
               </button>
               <button
                 onClick={() => setView('cr-login')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <h3 className="text-xl font-bold text-[#0f0f0f]">CR/Faculty</h3>
+                <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">CR/Faculty</h3>
               </button>
             </div>
           </div>
@@ -261,27 +261,27 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {view === 'club-role' && selectedClub && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#0f0f0f] mb-8 text-center">Select Your Role</h2>
-            <div className="grid grid-cols-2 gap-6">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#0f0f0f] mb-4 md:mb-6 lg:mb-8 text-center">Select Your Role</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <button
                 onClick={() => setView('club-view')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <h3 className="text-xl font-bold text-[#0f0f0f]">College Student</h3>
+                <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">College Student</h3>
               </button>
               <button
                 onClick={() => setView('president-login')}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <h3 className="text-xl font-bold text-[#0f0f0f]">Club President</h3>
+                <h3 className="text-base md:text-lg lg:text-xl font-bold text-[#0f0f0f]">Club President</h3>
               </button>
             </div>
           </div>
         )}
 
         {view === 'cr-login' && !isAuthenticated && (
-          <div className="max-w-md mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#0f0f0f] mb-6">CR/Faculty Login</h2>
+          <div className="max-w-md mx-auto bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg">
+            <h2 className="text-xl md:text-2xl font-bold text-[#0f0f0f] mb-4 md:mb-6">CR/Faculty Login</h2>
             <div className="space-y-4">
               <Input
                 placeholder="Username"
@@ -304,8 +304,8 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
         )}
 
         {view === 'president-login' && !isAuthenticated && (
-          <div className="max-w-md mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#0f0f0f] mb-6">Club President Login</h2>
+          <div className="max-w-md mx-auto bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg">
+            <h2 className="text-xl md:text-2xl font-bold text-[#0f0f0f] mb-4 md:mb-6">Club President Login</h2>
             <div className="space-y-4">
               <Input
                 placeholder="Username"
@@ -329,8 +329,8 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {(view === 'cr-login' && isAuthenticated) && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#0f0f0f] mb-6">{selectedDepartment} - CR View</h2>
-            <div className="grid grid-cols-2 gap-6">
+            <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-[#0f0f0f] mb-4 md:mb-6">{selectedDepartment} - CR View</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Class Announcements</h3>
                 <div className="space-y-4 mb-4 max-h-96 overflow-y-auto">
@@ -365,8 +365,8 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
                   Post
                 </Button>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Live Chat</h3>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg">
+                <h3 className="text-base md:text-lg lg:text-xl font-bold mb-3 md:mb-4">Live Chat</h3>
                 <div className="space-y-4 max-h-96 overflow-y-auto">
                   {getClassChatMessages(selectedDepartment).map((msg) => (
                     <div key={msg.id} className="bg-gray-50 p-4 rounded-lg">
@@ -382,8 +382,8 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {view === 'class-view' && selectedDepartment && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#0f0f0f] mb-6">{selectedDepartment} - Student View</h2>
-            <div className="grid grid-cols-2 gap-6">
+            <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-[#0f0f0f] mb-4 md:mb-6">{selectedDepartment} - Student View</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <h3 className="text-xl font-bold mb-4">Class Announcements</h3>
                 <div className="space-y-4 max-h-96 overflow-y-auto">
@@ -398,8 +398,8 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
                   ))}
                 </div>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-                <h3 className="text-xl font-bold mb-4">Live Chat</h3>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg">
+                <h3 className="text-base md:text-lg lg:text-xl font-bold mb-3 md:mb-4">Live Chat</h3>
                 <div className="space-y-4 mb-4 max-h-80 overflow-y-auto">
                   {getClassChatMessages(selectedDepartment).map((msg) => (
                     <div key={msg.id} className="bg-gray-50 p-4 rounded-lg">
@@ -441,9 +441,9 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {(view === 'president-login' && isAuthenticated) && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#0f0f0f] mb-6">{selectedClub} - President View</h2>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-              <h3 className="text-xl font-bold mb-4">Club Announcements</h3>
+            <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-[#0f0f0f] mb-4 md:mb-6">{selectedClub} - President View</h2>
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg">
+              <h3 className="text-base md:text-lg lg:text-xl font-bold mb-3 md:mb-4">Club Announcements</h3>
               <div className="space-y-4 mb-4 max-h-96 overflow-y-auto">
                 {getClubAnnouncements(selectedClub).map((ann) => (
                   <div key={ann.id} className="bg-blue-50 p-4 rounded-lg">
@@ -481,9 +481,9 @@ export default function StudentPortal({ onClose }: StudentPortalProps) {
 
         {view === 'club-view' && selectedClub && (
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#0f0f0f] mb-6">{selectedClub} - Student View</h2>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-              <h3 className="text-xl font-bold mb-4">Club Announcements</h3>
+            <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-[#0f0f0f] mb-4 md:mb-6">{selectedClub} - Student View</h2>
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg">
+              <h3 className="text-base md:text-lg lg:text-xl font-bold mb-3 md:mb-4">Club Announcements</h3>
               <div className="space-y-4 max-h-96 overflow-y-auto">
                 {getClubAnnouncements(selectedClub).map((ann) => (
                   <div key={ann.id} className="bg-blue-50 p-4 rounded-lg">
