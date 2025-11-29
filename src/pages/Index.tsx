@@ -73,7 +73,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       {/* New Clay-morphism Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-3 md:px-6 py-6 md:py-12">
+      <section className="flex items-center justify-center px-6 py-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -315,17 +315,17 @@ export default function Index() {
       </section>
 
       {/* Page 2: Everything You Need (Features) */}
-      <section id="features" className="min-h-screen py-10 md:py-16 lg:py-24 px-4 md:px-6 bg-[#F5F5F5]">
+      <section id="features" className="py-12 px-6 bg-[#F5F5F5]">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-8 md:mb-14 lg:mb-20"
+            className="text-center mb-8"
           >
-            <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-[#0f0f0f] mb-2 md:mb-4 lg:mb-6 tracking-tight">Everything You Need</h2>
-            <p className="text-base md:text-xl lg:text-3xl text-[#0f0f0f]/70 font-medium">All In One Place</p>
+            <h2 className="text-6xl font-bold text-[#0f0f0f] mb-4 tracking-tight">Everything You Need</h2>
+            <p className="text-3xl text-[#0f0f0f]/70 font-medium">All In One Place</p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
@@ -383,10 +383,10 @@ export default function Index() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="mt-10 md:mt-16 lg:mt-20 bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-12 shadow-[0_10px_40px_rgba(0,0,0,0.1)]"
+            className="mt-12 bg-white rounded-3xl p-12 shadow-[0_10px_40px_rgba(0,0,0,0.1)]"
           >
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f0f0f] mb-3 md:mb-4 lg:mb-6">Vision & Mission</h3>
-            <p className="text-lg md:text-xl lg:text-2xl text-[#0f0f0f]/70 mb-6 md:mb-8 lg:mb-10 font-medium">Driven By Purpose, Guided By Innovation</p>
+            <h3 className="text-4xl font-bold text-[#0f0f0f] mb-4">Vision & Mission</h3>
+            <p className="text-2xl text-[#0f0f0f]/70 mb-8 font-medium">Driven By Purpose, Guided By Innovation</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
               <motion.div
@@ -414,20 +414,20 @@ export default function Index() {
       </section>
 
       {/* Page 3: About Section */}
-      <section id="about" className="min-h-screen py-10 md:py-16 lg:py-24 px-4 md:px-6 bg-[#F5F5F5]">
+      <section id="about" className="py-12 px-6 bg-[#F5F5F5]">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-8 md:mb-14 lg:mb-20"
+            className="text-center mb-8"
           >
-            <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-[#0f0f0f] mb-2 md:mb-4 lg:mb-6 tracking-tight">About UniZone</h2>
-            <p className="text-base md:text-xl lg:text-3xl text-[#0f0f0f]/70 font-medium">Transforming Campus Life, One Innovation At A Time</p>
+            <h2 className="text-6xl font-bold text-[#0f0f0f] mb-4 tracking-tight">About UniZone</h2>
+            <p className="text-3xl text-[#0f0f0f]/70 font-medium">Transforming Campus Life, One Innovation At A Time</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-8 md:mb-12 lg:mb-16">
+          <div className="grid grid-cols-3 gap-8 mb-8">
             {[
               { icon: '🎯', title: 'Vision', text: 'To create a unified digital platform that simplifies and enhances every aspect of campus life for students.' },
               { icon: '🚀', title: 'Mission', text: 'To be the leading campus management ecosystem, empowering students to focus on what truly matters — their education and growth.' },
@@ -449,7 +449,7 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="space-y-4 md:space-y-6 lg:space-y-8">
+          <div className="space-y-6">
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -488,17 +488,17 @@ export default function Index() {
       </section>
 
       {/* Page 4: Team Section */}
-      <section id="team" className="min-h-screen py-10 md:py-16 lg:py-24 px-4 md:px-6 bg-gradient-to-b from-gray-100 to-gray-200">
+      <section id="team" className="py-12 px-6 bg-gradient-to-b from-gray-100 to-gray-200">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-8 md:mb-14 lg:mb-20"
+            className="text-center mb-8"
           >
-            <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-[#0f0f0f] mb-2 md:mb-4 lg:mb-6 tracking-tight">Meet Our Brilliant Team</h2>
-            <p className="text-base md:text-xl lg:text-3xl text-[#0f0f0f]/70 font-medium">The Minds Behind UniZone</p>
+            <h2 className="text-6xl font-bold text-[#0f0f0f] mb-4 tracking-tight">Meet Our Brilliant Team</h2>
+            <p className="text-3xl text-[#0f0f0f]/70 font-medium">The Minds Behind UniZone</p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 lg:gap-8">
@@ -515,10 +515,10 @@ export default function Index() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-br from-gray-900 to-black py-8 md:py-10 lg:py-12 px-4 md:px-6 text-center text-white"
+        className="bg-gradient-to-br from-gray-900 to-black py-6 px-6 text-center text-white"
       >
-        <p className="text-base md:text-lg font-medium">© 2025 UniZone. All rights reserved.</p>
-        <p className="text-xs md:text-sm mt-2 md:mt-3 opacity-70">Built with ❤️ for students, by students</p>
+        <p className="text-lg font-medium">© 2025 UniZone. All rights reserved.</p>
+        <p className="text-sm mt-2 opacity-70">Built with ❤️ for students, by students</p>
       </motion.footer>
 
       {/* Modals */}
